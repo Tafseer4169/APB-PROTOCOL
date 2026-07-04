@@ -146,15 +146,15 @@ Coverage is sampled after every completed APB transaction.
 
 Below is the architecture of the complete **SystemVerilog Non-UVM APB Verification Environment**, illustrating the Generator, Driver, Monitor, Scoreboard, Coverage, Mailboxes, Event Synchronization, and APB Slave DUT.
 
-> **Add your architecture image here after uploading it to the repository.**
+> 
 
 ```text
 docs/
-└── apb_testbench_architecture.png
+└── apb_tb_architect.png
 ```
 
 ```markdown
-![APB Verification Architecture](docs/apb_testbench_architecture.png)
+
 ```
 
 ---
@@ -171,10 +171,10 @@ docs/
 [SCO] DATA STORED
 
 ---------------------------------------
-Functional Coverage = 100.00%
+Functional Coverage = 90%
 ---------------------------------------
 
-Total Mismatches = 0
+Total Mismatches = 71
 ```
 
 ---

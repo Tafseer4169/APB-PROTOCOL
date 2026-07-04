@@ -147,17 +147,7 @@ Coverage is sampled after every completed APB transaction.
 Below is the architecture of the complete **SystemVerilog Non-UVM APB Verification Environment**, illustrating the Generator, Driver, Monitor, Scoreboard, Coverage, Mailboxes, Event Synchronization, and APB Slave DUT.
 
 > 
-
-```text
-docs/
-└── apb_tb_architect.png
-```
-
-```markdown
-
-```
-
----
+![APB TB ARCHITECTURE](https://github.com/Tafseer4169/APB-PROTOCOL/blob/main/apb_tb_architect.png)
 
 ## 📈 Sample Simulation Output
 

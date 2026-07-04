@@ -152,17 +152,18 @@ Below is the architecture of the complete **SystemVerilog Non-UVM APB Verificati
 ## 📈 Sample Simulation Output
 
 ```text
-[GEN] paddr=10 pwdata=125 pwrite=1
-
-[DRV] Write Transaction Started
-
-[MON] Transaction Captured
-
-[SCO] DATA STORED
-
----------------------------------------
-Functional Coverage = 90%
----------------------------------------
+# KERNEL: [GEN] :  paddr:36  pwdata:78 pwrite:0  prdata:0 pslverr:0 @ 40010
+# KERNEL: [DRV] :  paddr:36  pwdata:78 pwrite:0  prdata:0 pslverr:0 @ 40070
+# KERNEL: ADDR=36 PSLVERR=0 addr_err=0
+# KERNEL: [MON] :  paddr:36  pwdata:0 pwrite:0  prdata:0 pslverr:0 @ 40090
+# KERNEL: [SCO] :  paddr:36  pwdata:0 pwrite:0  prdata:0 pslverr:0 @ 40090
+# KERNEL: [SCO] : Data Matched
+# KERNEL: ---------------------------------------------------------------------------------------------------
+# KERNEL: ----Total number of Mismatch : 71------
+# KERNEL: --------------------------------------
+# KERNEL: Functional Coverage = 90.00%
+# KERNEL: --------------------------------------
+# RUNTIME: Info: RUNTIME_0068 testbench.sv (348
 
 Total Mismatches = 71
 ```

@@ -178,9 +178,6 @@ Total Mismatches = 71
 * Functional Coverage (Covergroups)
 * Mailboxes
 * Events
-* Vivado Simulator
-* QuestaSim / ModelSim
-* GTKWave
 * EDA Playground
 
 ---

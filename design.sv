@@ -124,13 +124,12 @@ module apb_s(
   end
   
   always @(posedge pclk)
-begin
-    if(psel && penable)
     begin
-        $display("ADDR=%0d PSLVERR=%0b addr_err=%0b",
-                 paddr,pslverr,addr_err);
+      if(psel && penable)
+        begin
+          $display("ADDR=%0d PSLVERR=%0b addr_err=%0b",paddr,pslverr,addr_err);
+        end
     end
-end
   
   assign addr_err = ((nstate == write) || (nstate == read)) && (paddr > 15) ? 1'b1 : 1'b0;
   
